@@ -81,10 +81,13 @@ class ViewController: UIViewController {
         let correctAnswer = allQuestions.list[questionNumber].answer
         
         if correctAnswer == pickedAnswer {
+            // Imported Library to make a Toast
+            ProgressHUD.showSuccess("Correct!")
+            
             score += 1
-            print("You got it!")
         } else {
-            print("Wrong!")
+            // Imported Library to make a Toast
+            ProgressHUD.showError("Wrong!")
         }
     }
     
