@@ -96,6 +96,8 @@ class ViewController: UIViewController {
         questionNumber = 0
         score = 0
         progressBar.progress = 0
+        updateUI()
+        
     }
     
 

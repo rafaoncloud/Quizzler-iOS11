@@ -62,14 +62,24 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l80-sZ-798">
-                                        <rect key="frame" x="8" y="29" width="304" height="2"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l80-sZ-798" customClass="ProgressView" customModule="Quizzler" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="30" width="304" height="4"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="g7O-rP-2kk"/>
+                                        </constraints>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </progressView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="qil-6C-XPA" firstAttribute="top" secondItem="gHh-ve-yfT" secondAttribute="top" id="4Km-ra-lKe"/>
                                     <constraint firstItem="l80-sZ-798" firstAttribute="leading" secondItem="gHh-ve-yfT" secondAttribute="leading" constant="8" id="4jg-sY-URr"/>
-                                    <constraint firstAttribute="bottom" secondItem="l80-sZ-798" secondAttribute="bottom" constant="16" id="7Ut-s3-dYM"/>
+                                    <constraint firstAttribute="bottom" secondItem="l80-sZ-798" secondAttribute="bottom" constant="13" id="7Ut-s3-dYM"/>
                                     <constraint firstItem="c0R-Fj-fUI" firstAttribute="top" secondItem="gHh-ve-yfT" secondAttribute="top" id="FrD-bq-Sm6"/>
                                     <constraint firstItem="qil-6C-XPA" firstAttribute="left" secondItem="gHh-ve-yfT" secondAttribute="left" constant="8" id="FwJ-uo-2gJ"/>
                                     <constraint firstAttribute="height" constant="47" id="imV-DY-geY"/>
